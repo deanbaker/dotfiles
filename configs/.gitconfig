@@ -1,0 +1,15 @@
+[user]
+    name = Dean Baker
+    email = deano.baker@gmail.com
+[init]
+    defaultBranch = main
+[pull]
+    rebase = true
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    br = branch
+    hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+[core]
+    excludesfile = ~/.gitignore_global

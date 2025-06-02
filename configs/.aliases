@@ -1,0 +1,6 @@
+eval $(thefuck --alias)
+. /opt/homebrew/etc/profile.d/z.sh
+alias lg=lazygit
+alias ffs=thefuck
+
+

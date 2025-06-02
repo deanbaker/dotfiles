@@ -36,3 +36,13 @@ cd ~/dotfiles
 chmod +x setup.sh
 ./setup.sh
 ```
+
+# Keep things up to date
+## Update Brewfile with currently installed packages
+brew bundle dump --file=Brewfile --force
+
+## Backup VS Code extensions
+code --list-extensions > vscode/extensions.txt
+
+## Restore VS Code extensions
+cat vscode/extensions.txt | xargs -L 1 code --install-extension
