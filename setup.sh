@@ -32,5 +32,16 @@ git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:
 sed -i '' 's/plugins=(git)/plugins=(git zsh-autosuggestions zsh-syntax-highlighting docker kubectl)/g' ~/.zshrc
 source ~/.zshrc
 
+# Link dotfiles
+echo "Linking dotfiles..."
+ln -sf ~/dotfiles/configs/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/configs/.tmux.conf ~/.tmux.conf
+ln -sf ~/dotfiles/configs/.gitconfig ~/.gitconfig
+ln -sf ~/dotfiles/configs/.aliases ~/.aliases
+ln -sf ~/dotfiles/configs/.functions ~/.functions
+
+# Set up Vim
+echo "Setting up Vim..."
+bash ~/dotfiles/scripts/setup-vim.sh
 
 echo "Setup complete! Restart your terminal."

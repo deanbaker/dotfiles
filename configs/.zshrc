@@ -22,3 +22,4 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Added by Windsurf
 export PATH="/Users/dean/.codeium/windsurf/bin:$PATH"
+export GOOGLE_DRIVE_OAUTH_PATH=~/.config/goose/mcp-gdrive/gcp-oauth.keys.json

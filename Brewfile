@@ -43,4 +43,12 @@ brew "postman", args: ["cask"]             # Postman API client
 brew "dbeaver-community", args: ["cask"]   # Database GUI
 
 # Fonts (optional)
-brew "font-fira-code", args: ["cask"]
+brew "font-fira-code", args: ["cask"]brew "font-hack-nerd-font", args: ["cask"]  # Nerd Font for Vim icons
+
+# Vim and related tools
+brew "vim"                         # Vim editor
+brew "fzf"                         # Fuzzy finder (for Vim)
+brew "ripgrep"                     # Fast search (for Vim)
+
+# Python tools (for Vim linting)
+brew "python"                      # Python (includes pip)
