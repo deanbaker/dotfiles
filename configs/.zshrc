@@ -22,4 +22,15 @@ export PATH="$HOME/.local/bin:$PATH"
 
 # Added by Windsurf
 export PATH="/Users/dean/.codeium/windsurf/bin:$PATH"
+
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+alias claude="/Users/dean/.claude/local/claude"
+
+# Added by LM Studio CLI (lms)
+export PATH="$PATH:/Users/dean/.lmstudio/bin"
+# End of LM Studio CLI section
+
 export GOOGLE_DRIVE_OAUTH_PATH=~/.config/goose/mcp-gdrive/gcp-oauth.keys.json
