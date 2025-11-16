@@ -10,6 +10,11 @@ source $ZSH/oh-my-zsh.sh
 [ -f ~/.aliases ] && source ~/.aliases
 [ -f ~/.functions ] && source ~/.functions
 
+# Neovim aliases - redirect vi/vim to nvim
+alias vi="nvim"
+alias vim="nvim"
+alias vimdiff="nvim -d"
+
 # NVM Configuration
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"

@@ -42,13 +42,16 @@ brew "iterm2", args: ["cask"]              # iTerm2 (better terminal)
 brew "postman", args: ["cask"]             # Postman API client
 brew "dbeaver-community", args: ["cask"]   # Database GUI
 
-# Fonts (optional)
-brew "font-fira-code", args: ["cask"]brew "font-hack-nerd-font", args: ["cask"]  # Nerd Font for Vim icons
+# Fonts (Nerd Fonts required for Neovim icons)
+brew "font-fira-code-nerd-font", args: ["cask"]
+brew "font-hack-nerd-font", args: ["cask"]
+brew "font-jetbrains-mono-nerd-font", args: ["cask"]
 
 # Vim and related tools
 brew "vim"                         # Vim editor
-brew "fzf"                         # Fuzzy finder (for Vim)
-brew "ripgrep"                     # Fast search (for Vim)
+brew "neovim"                      # Neovim - modern Vim
+brew "fzf"                         # Fuzzy finder (for Vim/Neovim)
+brew "ripgrep"                     # Fast search (for Vim/Neovim)
 
 # Python tools (for Vim linting)
 brew "python"                      # Python (includes pip)

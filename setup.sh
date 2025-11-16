@@ -35,13 +35,24 @@ source ~/.zshrc
 # Link dotfiles
 echo "Linking dotfiles..."
 ln -sf ~/dotfiles/configs/.vimrc ~/.vimrc
+ln -sf ~/dotfiles/configs/.zshrc ~/.zshrc
 ln -sf ~/dotfiles/configs/.tmux.conf ~/.tmux.conf
 ln -sf ~/dotfiles/configs/.gitconfig ~/.gitconfig
 ln -sf ~/dotfiles/configs/.aliases ~/.aliases
 ln -sf ~/dotfiles/configs/.functions ~/.functions
 
-# Set up Vim
+# Set up Neovim
+echo "Setting up Neovim..."
+mkdir -p ~/.config
+ln -sf ~/dotfiles/configs/nvim ~/.config/nvim
+echo "Neovim config symlinked. Run 'nvim' and wait for plugins to install on first launch."
+
+# Set up Vim (legacy)
 echo "Setting up Vim..."
 bash ~/dotfiles/scripts/setup-vim.sh
 
 echo "Setup complete! Restart your terminal."
+echo "Next steps:"
+echo "1. Open Neovim with 'nvim' - plugins will auto-install"
+echo "2. In Neovim, run ':Mason' to install language servers"
+echo "3. Restart Neovim after plugin installation completes"
